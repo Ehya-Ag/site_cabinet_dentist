@@ -5,11 +5,14 @@
 }
 body{
     margin: 0;
+    padding: 0;
     background-color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+overflow-x: hidden;
 }
 section{
-    margin-top: 20px;
+    margin-top: 10px;
+    padding: 0;
 }
 a{
     color: #333;
@@ -219,7 +222,7 @@ a{
     display: flex;
     align-items: flex-end;
     flex-direction: column;
-    margin-top: -20px;
+    margin-top: -10px;
     margin-left: -100px;
     height: 650px;
     width: 650px;
@@ -285,7 +288,7 @@ a{
     margin: 0 auto; 
     padding: 80px;
     margin-left: 545px;
-    margin-top: 300px;
+    margin-top: 100px;
 }
 
 .text, .line, .text-key, .text2 {
@@ -318,22 +321,21 @@ a{
     left: 600px; 
     font-size: 40PX;
 }
-.tire {
+/* .tire {
     position: absolute; 
     top: 100;
     margin-left: 14%;
     width: 2px; 
     height: 100%; 
     background-color: #f0f0f0; 
-}
+} */
 .parent {
     display: grid;
     grid-template-columns: repeat(3, 400px);
-    grid-gap: 0;
     justify-content: center;
 }
 
-.a1, .a2, .a3, .a4, .a5, .a6 {
+.a1, .a2, .a3{
     background-color: #f8fafc; 
     text-align: center; 
     display: flex;
@@ -344,6 +346,21 @@ a{
     align-items: center;
     height: 70%;
     width: 70%;
+    padding: 10px;
+}
+.a4, .a5, .a6 {
+    background-color: #f8fafc; 
+    text-align: center; 
+    display: flex;
+    margin-top: -90px;
+    margin-left: 10%;
+    border-radius: 10px 10px 10px 10px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 70%;
+    width: 70%;
+    padding: 10px;
 }
 
 .parent img {
@@ -356,7 +373,7 @@ h4, p {
     display: flex;
     text-align: center;
 }
-p{
+.parent p{
     margin-bottom: 200px;
 }
 /*bleu d'n bas de service*/
@@ -399,8 +416,15 @@ p{
 .bleu2 h4{
     font-size: 30px; 
 }
-strong{
-    font-size: 40px;
+.bleu2 h4 span{
+    font-size: 50px;
+    color: #ffffff;
+    margin-left: 280px;
+}
+#br{
+    display: flex;
+    position: absolute;
+    margin-top: 70px;
 }
 /*Section history*/
 .history{
@@ -412,7 +436,7 @@ strong{
     margin: 0 auto; 
     padding: 80px;
     margin-left: 545px;
-    margin-top: 300px;
+    margin-top: 700px;
 }
 
 .text_history, .ligne, .text_who, .text_history2 {
@@ -433,7 +457,7 @@ strong{
     margin-top: 2%;
 }
 .ligne {
-    margin-top: 4%; 
+    margin-top: 4.5%; 
     margin-left: 120px; 
     width: 65%;
     height: 2px; 
@@ -441,9 +465,9 @@ strong{
 }
 
 .text_who {
-    margin-top: 0%; 
     left: 120px; 
     font-size: 40PX;
+    margin-top: 27px;
 }
 .parent2{
     display: flex;
@@ -497,7 +521,7 @@ strong{
 
 .text_meet {
     margin-left: 120px; 
-    margin-top: 9%;
+    margin-top: 9.3%;
     font-size: 35px;
     transform: translateY(-50%); 
 }
@@ -509,9 +533,9 @@ strong{
 
 .ligne2 {
     margin-top: 10%; 
-    margin-left: 20%;
+    margin-left: 18%;
     position: absolute;
-    width: 60%; 
+    width: 67%; 
     height: 2px; 
     background-color: black; 
 }
@@ -565,9 +589,8 @@ strong{
     }
     .bleu3 p{
         margin-top: 10px;
-        margin-left: -300px;
+        margin-left: -250px;
         color: #ffffff;
-        word-spacing: 10px;
         font-size: 15px;
         line-height: 25px;
     }
@@ -625,6 +648,7 @@ strong{
         margin-top: 0%; 
         left: 120px; 
         font-size: 40PX;
+        margin-top: 30px;
     }
 
 
@@ -684,8 +708,9 @@ strong{
     #sign {
         background-color: #0056b3;
         position: absolute;
-        margin-top: 350px;
+        margin-top: 400px;
         width: 30%;
+        height: 50px;
         border-radius: 10px 10px 10px 10px;
         color: white;
         border: none;
@@ -725,44 +750,56 @@ strong{
     .inscription{
         display: flex;
         background-color: #F8FAFC;
-        height: 700px;
+        height: 500px;
         justify-content: center;
         align-items: center;
     }
-    .inscription form{
+    .inscription div{
         display: flex;
-        align-items: flex-end;
+        align-items: center;
         padding: 5px;
         background-color: #216583;
-        margin-left: -300px;
+        height: 280px;
+        width: 70%;
         border-radius: 15px 15px 15px 15px;
-        height: 400px;
-        width: 200%;
+
+    }
+    .inscription form{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+        background-color: #216583;
+        margin-left: 200px;                             
     }
     .inscription input[type="text"],
     input[type="email"]{
         background-color: #bcbcbc9e;
         border-radius: 10px 10px 10px 10px;
-        margin-bottom: 80px;
-        margin-left: 50px;
-        width: 25%;
+        width: 200px;
         height: 50px;
         border: none;
+        margin-top: 200px;
+        margin: 20px;
+        align-items: center;
     }
     .inscription button{
-        width: 25%;
+        width: 200px;
         height: 50px;
         border-radius: 10px 10px 10px 10px;
-        margin-bottom: 80px;
-        margin-left: 50px;
         background-color: #F8FAFC;
+        margin-top: 200px;
+        margin: 20px;
+        
     }
     .inscription h3{
         display: flex;
-        margin-left: -10px;
+        position: absolute;
+        align-items: center;
         color: #ffffff;
         font-size: 35px;
-        margin-bottom: -150px;
+        margin-top: -150px;
+        margin-left: 250px;
     }
     .inscription ::placeholder{
         color: #ffffff;
@@ -774,8 +811,8 @@ strong{
     background-color: rgba(81,110,255,255);
     justify-content: center;
     align-items: center;
-    margin-top: 0px;
-    height: 400px;
+    margin-top: 0;
+     height: 400px; 
     color: #f5F5F5;
     line-height: 30px;
     /*padding: 20px;*/
@@ -799,14 +836,19 @@ strong{
     .partie3{
         border-right: 1px solid #f5F5F5;
         height: 200px;
-        margin-left: 50px;
+        margin-left: 0;
         padding: 30px;
     }
     .partie3 td{
         padding: 10px;
+        width: 150;
+        justify-content: left;
     }
+    
     .partie3 td a{
-        padding: 10px;
+        /* padding: 10px; */
+        margin: 10px;
+        
     }
     .partie4{
         height: 200px;
@@ -831,7 +873,6 @@ strong{
     position: absolute;
     background-color: #216583;
     width: 100%;
-    height: 15%;
     margin-top: -10px;
 }
 
@@ -843,7 +884,6 @@ strong{
     }
     
       .footer p{
-    margin-top: 80px;
         color: #ffffff;
     } 
     .partie3 table a{
