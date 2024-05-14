@@ -396,7 +396,7 @@ h4, p {
     flex-direction: column; 
     justify-content: center;
     background-color: #516eff;
-    margin-top: -150px;
+    margin-top: 0;
     border: 3px solid rgb(253, 253, 255);
     border-radius: 10px;
     font-size: 20px;
@@ -505,6 +505,7 @@ h4, p {
 .meet{
     display: flex;
     background-color: #f8fafc;
+    height: 850px;
     
 }
 .container4 {
@@ -512,7 +513,7 @@ h4, p {
     width: 100%;
     margin: 0 auto; 
     padding: 50px;
-    margin-top: 300px;
+    margin-top: 500px;
 }
 
 .text_meet, .line, .docteur, .text_meet2 {
@@ -555,7 +556,7 @@ h4, p {
         position: absolute;
         background-color: #f8fafc;
         border: 1px solid #007bff;
-        margin-top: -150px;
+        margin-top: 0;
         border-radius: 10px 10px 10px 10px;
         width: 180px;
     }
@@ -609,7 +610,8 @@ h4, p {
         display: flex;
         flex-direction: row;
         font-size: 100px;
-        margin-top: -250px;
+        margin-top: 10px;
+        border-radius: 10px 10px 10px 10px;
         color: #bcbcbc9e;
     }
     /*Appoinment*/
